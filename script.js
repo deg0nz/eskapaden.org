@@ -25,7 +25,7 @@ class EskapadeLetter {
   initEventListeners() {
     const reitsportDescription = document.getElementById("description-reitsport");
     const educationalLabel = document.getElementById("educational-label");
-
+    
     this.letterElement.addEventListener("mouseover", () => {
       this.toggleColor();
 
@@ -33,7 +33,7 @@ class EskapadeLetter {
         reitsportDescription.style.textDecoration = "line-through";
         educationalLabel.innerText = "Etepetete";
       } else {
-        reitsportDesscription.style.textDecoration = "";
+        reitsportDescription.style.textDecoration = "";
         educationalLabel.innerText = "Bildungssprachlich";
       }
     });
