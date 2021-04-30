@@ -24,6 +24,7 @@ class EskapadeLetter {
 
   initEventListeners() {
     const reitsportDescription = document.getElementById("description-reitsport");
+    const ridingLabel = document.getElementById("riding-label");
     const educationalLabel = document.getElementById("educational-label");
     
     this.letterElement.addEventListener("mouseover", () => {
@@ -31,9 +32,11 @@ class EskapadeLetter {
 
       if (coloredLetterExists()) {
         reitsportDescription.style.textDecoration = "line-through";
+        ridingLabel.innerText = "Fertchens";
         educationalLabel.innerText = "Etepetete";
       } else {
         reitsportDescription.style.textDecoration = "";
+        ridingLabel.innerText = "Reitsport";
         educationalLabel.innerText = "Bildungssprachlich";
       }
     });
